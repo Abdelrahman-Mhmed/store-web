@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - MONOCHROME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">MONOCHROME</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collections.html" class="nav-link active">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Collections Header -->
+    <section class="collections-header">
+        <div class="container">
+            <h1>Our Collections</h1>
+            <p>Discover timeless pieces organized by category</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="tops">Tops</button>
+                <button class="filter-btn" data-category="bottoms">Bottoms</button>
+                <button class="filter-btn" data-category="dresses">Dresses</button>
+                <button class="filter-btn" data-category="outerwear">Outerwear</button>
+                <button class="filter-btn" data-category="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Tops -->
+                <div class="product-card" data-category="tops" data-product-id="1">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic White Shirt</h3>
+                        <p class="product-price">$89.00</p>
+                        <button class="add-to-cart-btn" data-product-id="1">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tops" data-product-id="5">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Blouse</h3>
+                        <p class="product-price">$79.00</p>
+                        <button class="add-to-cart-btn" data-product-id="5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tops" data-product-id="6">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cashmere Sweater</h3>
+                        <p class="product-price">$159.00</p>
+                        <button class="add-to-cart-btn" data-product-id="6">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bottoms -->
+                <div class="product-card" data-category="bottoms" data-product-id="7">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">High-Waist Trousers</h3>
+                        <p class="product-price">$119.00</p>
+                        <button class="add-to-cart-btn" data-product-id="7">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bottoms" data-product-id="8">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Skinny Jeans</h3>
+                        <p class="product-price">$99.00</p>
+                        <button class="add-to-cart-btn" data-product-id="8">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bottoms" data-product-id="9">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">A-Line Skirt</h3>
+                        <p class="product-price">$89.00</p>
+                        <button class="add-to-cart-btn" data-product-id="9">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Dresses -->
+                <div class="product-card" data-category="dresses" data-product-id="3">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Minimalist Dress</h3>
+                        <p class="product-price">$149.00</p>
+                        <button class="add-to-cart-btn" data-product-id="3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dresses" data-product-id="10">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Evening Gown</h3>
+                        <p class="product-price">$299.00</p>
+                        <button class="add-to-cart-btn" data-product-id="10">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dresses" data-product-id="11">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Summer Dress</h3>
+                        <p class="product-price">$129.00</p>
+                        <button class="add-to-cart-btn" data-product-id="11">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Outerwear -->
+                <div class="product-card" data-category="outerwear" data-product-id="2">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Black Denim Jacket</h3>
+                        <p class="product-price">$129.00</p>
+                        <button class="add-to-cart-btn" data-product-id="2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="outerwear" data-product-id="12">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wool Coat</h3>
+                        <p class="product-price">$249.00</p>
+                        <button class="add-to-cart-btn" data-product-id="12">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="outerwear" data-product-id="13">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Jacket</h3>
+                        <p class="product-price">$399.00</p>
+                        <button class="add-to-cart-btn" data-product-id="13">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="product-card" data-category="accessories" data-product-id="14">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Handbag</h3>
+                        <p class="product-price">$199.00</p>
+                        <button class="add-to-cart-btn" data-product-id="14">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessories" data-product-id="15">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Scarf</h3>
+                        <p class="product-price">$49.00</p>
+                        <button class="add-to-cart-btn" data-product-id="15">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessories" data-product-id="16">
+                    <div class="product-image">
+                        <div class="product-placeholder"></div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Minimalist Watch</h3>
+                        <p class="product-price">$299.00</p>
+                        <button class="add-to-cart-btn" data-product-id="16">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MONOCHROME</h3>
+                    <p>Elevating style through timeless design and premium quality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="collections.html">New Arrivals</a></li>
+                        <li><a href="collections.html">Best Sellers</a></li>
+                        <li><a href="collections.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MONOCHROME. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="collections.js"></script>
+</body>
+</html>
